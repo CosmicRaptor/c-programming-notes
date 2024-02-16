@@ -11,11 +11,16 @@ void main(){
     }
     printf("Enter the number");
     scanf("%d", &num);
-    for(int i=0; i<n; i++){
+    for(i=0; i<n; i++){
         if (num==a[i])
         {
             break;
         }
-          
+    }
+    if(i == n){
+        printf("Number not found");
+    }
+    else {
+        printf("Number found at %d", i);
     }
 }
